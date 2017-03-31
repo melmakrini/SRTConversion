@@ -8,9 +8,9 @@ namespace ConversionSRT
     public abstract class GenericSRT : ISRT
     {
        const double DEFAULT_EPSILON = 1e-10f;	// Tolérance de convergence
-       
-       protected abstract  static LambertZone ZONE;
-       protected abstract  Ellipse ELLIPSE; 
+
+       protected LambertZone ZONE {get; set;}
+       protected Ellipse ELLIPSE {get; set;}
        
 
         protected GenericSRT(Ellipse _ellipse, LambertZone _zone)
@@ -183,6 +183,11 @@ namespace ConversionSRT
         {
             double sinPhi = Math.Sin(phi);
             return Math.Log(Math.Tan(phi / 2.0f + Math.PI / 4) * Math.Pow((1 - ELLIPSE.E() * sinPhi) / (1 + ELLIPSE.E() * sinPhi), ELLIPSE.E() / 2.0f));
-        }        
+        }
+
+        public Ellipse getEllipse()
+        {
+            return ELLIPSE;
+        }
     }
 }

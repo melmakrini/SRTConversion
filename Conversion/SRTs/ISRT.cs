@@ -8,9 +8,8 @@ namespace ConversionSRT
     public interface ISRT
     {
         #region conversion coordonnées
-        Ellipse getEllipse();
-         
         SRTName getSRTName();
+        Ellipse getEllipse();
         CoordCartesiennes   GeographiquesToCartesiennes(CoordGeographiques geo);
         CoordGeographiques  CartesiennesToGeographiques(CoordCartesiennes cart);
         CoordPlanes         GeographiquesToPlanes(CoordGeographiques geo);
