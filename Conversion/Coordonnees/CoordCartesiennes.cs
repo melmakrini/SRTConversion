@@ -70,14 +70,16 @@ namespace ConversionSRT
                 return Referentiel.GeographiquesToPlanes(Referentiel.CartesiennesToGeographiques(this));
             }
             else
-            {
-               
-                
+            {              
                 //TODO 
             }
             return null;
         }
-      
+      /// <summary>
+      /// 
+      /// </summary>
+      /// <param name="srtDest"></param>
+      /// <returns></returns>
         public override CoordGeographiques ToGeographiques(ISRT srtDest)
         {
             throw new NotImplementedException();

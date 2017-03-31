@@ -5,30 +5,42 @@ using System.Text;
 
 namespace ConversionSRT 
 {
+    /// <summary>
+    /// 
+    /// </summary>
    public class CoordGeographiques:Coordonnees
     {
         double lambda;
         double phi;
         double h;
-
+       /// <summary>
+       /// 
+       /// </summary>
         public double Lambda
         {
             get { return lambda; }
             set { lambda = value; }
         }
-        
+        /// <summary>
+        /// 
+        /// </summary>
         public double Phi
         {
             get { return phi; }
             set { phi = value; }
         }
-        
+        /// <summary>
+        /// 
+        /// </summary>
         public double H
         {
             get { return h; }
             set { h = value; }
         }
-
+       /// <summary>
+       /// 
+       /// </summary>
+       /// <param name="srt"></param>
         public CoordGeographiques(ISRT srt):base(srt)
         {
         }
@@ -61,12 +73,20 @@ namespace ConversionSRT
             
             return null;
         }
-
+       /// <summary>
+       /// 
+       /// </summary>
+       /// <param name="srtDest"></param>
+       /// <returns></returns>
         public override CoordGeographiques ToGeographiques(ISRT srtDest)
         {
             throw new NotImplementedException();
         }
-
+       /// <summary>
+       /// 
+       /// </summary>
+       /// <param name="srtDest"></param>
+       /// <returns></returns>
         public override CoordCartesiennes ToCartesiennes(ISRT srtDest)
         {
             throw new NotImplementedException();
