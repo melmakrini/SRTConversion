@@ -1,0 +1,4 @@
+E:\Projet\Autres\SystemeReferencielTerrestre\SRTConversion\Conversion\bin\Debug\Conversion.dll
+E:\Projet\Autres\SystemeReferencielTerrestre\SRTConversion\Conversion\bin\Debug\Conversion.pdb
+E:\Projet\Autres\SystemeReferencielTerrestre\SRTConversion\Conversion\obj\Debug\Conversion.dll
+E:\Projet\Autres\SystemeReferencielTerrestre\SRTConversion\Conversion\obj\Debug\Conversion.pdb
