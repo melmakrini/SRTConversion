@@ -5,6 +5,9 @@ using System.Text;
 
 namespace ConversionSRT 
 {
+	///
+	///
+	///
     abstract public class Coordonnees
     {
         private ISRT referentiel;
